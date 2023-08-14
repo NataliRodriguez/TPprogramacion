@@ -1,0 +1,73 @@
+<!-- lee nuestro array info -->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div *ngFor="let i of info" class="col">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>{{i.titulo}}</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image src="{{i.image}}" alt="{{i.alt}}" width="350px">
+                    <mat-card-content>
+                      <p>
+                        {{i.descripcion}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                     
+                    </mat-card-actions>
+                  </mat-card>
+
+                  
+            </div>
+            <div *ngFor="let i of infor" class="div">
+              <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{i.nombre}}</mat-card-title>
+                  </mat-card-header>
+                  <img mat-card-image src="{{i.escudo}}"  width="400px">
+                  <mat-card-content>
+                    <h2>
+                      Año de fundacion: {{i.anio}}
+                    </h2>
+                    <p>
+                     Titulos Nacionales: {{i.titulosNac}}
+                    </p>
+                    <p>
+                      Titulos Internacionales: {{i.titulosInt}}
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                   
+                  </mat-card-actions>
+                </mat-card>
+
+              </div>
+              <div *ngFor="let i of est" class="div">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>{{i.nombre}}</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image src="{{i.Img}}" width="450px">
+                    <mat-card-content>
+                      <p>
+                        Año de inauguracion: {{i.anocon}}
+                      </p>
+                      <p>
+                        Capacidad: {{i.capacidad}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      
+                    </mat-card-actions>
+                  </mat-card>
+          </div>
+        </div>
+ 
+
+  
